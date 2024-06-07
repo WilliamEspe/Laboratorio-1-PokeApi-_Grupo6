@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokemon</title>
+</head>
+
+<body>
+    
+        <h1>Pokemon</h1>
+        <input type="text" id="search" placeholder="Nombre o número Pokemon">
+        <div>
+            <button id="search-button">Buscar</button>
+            <button id="clear-button">Limpiar</button>
+            <button id="random-button">Aleatorio</button>
+        </div>
+
+    <script src="app.js"></script>
+
+    <div class="filter-container">
+        <label for="type">Tipo:</label>
+        <select id="type">
+            <option value="all">Todos</option>
+            <option value="fire">Fuego</option>
+            <option value="water">Agua</option>
+            <option value="grass">Planta</option>
+            <option value="electric">Eléctrico</option>
+            <option value="ice">Hielo</option>
+            <option value="fighting">Lucha</option>
+            <option value="poison">Veneno</option>
+            <option value="ground">Tierra</option>
+            <option value="flying">Volador</option>
+            <option value="psychic">Psíquico</option>
+            <option value="bug">Bicho</option>
+            <option value="rock">Roca</option>
+            <option value="ghost">Fantasma</option>
+            <option value="dark">Siniestro</option>
+            <option value="dragon">Dragón</option>
+            <option value="steel">Acero</option>
+            <option value="fairy">Hada</option>
+        </select>
+
+        <label for="stat">Estadística:</label>
+        <select id="stat">
+            <option value="all">Todas</option>
+            <option value="attack">Ataque</option>
+            <option value="defense">Defensa</option>
+            <option value="speed">Velocidad</option>
+            <option value="hp">Puntos de vida</option>
+            <option value="special-attack">Ataque especial</option>
+            <option value="special-defense">Defensa especial</option>
+        </select>
+    </div>
+
+    <div id="pokemon-container"></div>
+
+    <div class="pagination">
+        <button id="prevPage" disabled>Anterior</button>
+        <span id="currentPage">1</span>
+        <button id="nextPage">Siguiente</button>
+    </div>
+
+</body>
+
+</html>
