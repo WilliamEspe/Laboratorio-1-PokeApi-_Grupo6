@@ -8,8 +8,7 @@ document.getElementById('search-button').addEventListener('click', () => {
             <div class="card">
             <h2>${data.name}</h2>
             <img src="${data.sprites.front_default}" alt="${data.name}">
-            <p>Altura: ${data.height}</p>
-            <p>Peso: ${data.weight}</p>
+            <div class="statss">${data.stats.map(s => `<p>${s.stat.name}: ${s.base_stat}</p>`).join('')}</div>
             </div>
             `;
         })
@@ -40,8 +39,7 @@ document.getElementById('random-button').addEventListener('click', () => {
             <div class="card">
                 <h2>${data.name}</h2>
                 <img src="${data.sprites.front_default}" alt="${data.name}">
-                <p>Altura: ${data.height}</p>
-                <p>Peso: ${data.weight}</p>
+                <div class="statss">${data.stats.map(s => `<p>${s.stat.name}: ${s.base_stat}</p>`).join('')}</div>
             </div>
             `;
         })
